@@ -73,19 +73,19 @@ html, body {
   display: block;
 }
 
-.todo-input input[type="text"] {
+.todo-input input {
   border: 1px solid #566270;
   padding: 10px;
   box-sizing: border-box;
   width: 100%;
 }
 
-.todo-input input[type="text"]::placeholder {
+.todo-input input::placeholder {
   font-style: italic;
   color: #E0E3DA;
 }
 
-.todo-input input[type="text"]:focus {
+.todo-input input:focus {
   outline: none;
 }
 
