@@ -125,6 +125,10 @@ html, body {
   margin-left: 4px;
 }
 
+.todo-count .number {
+  font-weight: bold;
+}
+
 .todo-filter {
   margin: 0;
   padding: 0;
@@ -134,11 +138,21 @@ html, body {
   left: 0;
 }
 
-.todo-filter li {
+.todo-filter input[type="radio"] {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.todo-filter label {
   display: inline;
   cursor: pointer;
-  user-select: none;
-  margin: 0 2px;
+  margin: 0 3px;
+}
+
+.todo-filter input[type="radio"]:checked + label {
+  color: blue;
+  text-decoration: underline;
 }
 
 .todo-clear {
@@ -190,31 +204,18 @@ html, body {
   opacity: 0.4;
 }
 
-.drag-over {
-  border-top: 2px solid #0F0BF3 !important;
+li.drag-over-top {
+  border-top: 2px solid #0F0BF3;
+}
+
+li.drag-over-bottom {
+  border-bottom: 2px solid #0F0BF3;
 }
 
 .preview {
   opacity: 0.3;
-  border: 2px solid green !important;
+  border: 2px solid #008000;
 }
 
-#drop1 {
-  width: 200px;
-  height: 200px;
-  background-color: green;
-}
-
-#dnd1 {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
-
-#drop2 {
-  width: 90px;
-  height: 90px;
-  background-color: blue;
-}
 
 /*# sourceMappingURL=app.css.map*/
